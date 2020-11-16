@@ -7,11 +7,10 @@ addBtn.addEventListener("click", function (e) {
     let check = document.getElementById("check");
     let notes = localStorage.getItem("notes");
     if (notes == null) {
-
         notesObj = [];
     }
     else {
-        notesObj = JSON.parse(notes);          
+        notesObj = JSON.parse(notes);
     }
     let myObj = {
         title: addTitle.value,
